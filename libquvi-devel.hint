@@ -1,6 +1,6 @@
 category: Video
-requires: libquvi6 libcurl-devel libiconv lua
-external-source: quvi
+requires: libquvi7 libcurl-devel libiconv lua
+external-source: libquvi
 sdesc: "Flash Video download link parser library (development)"
 ldesc: "quvi is a command line tool for parsing flash video download 
 links. It supports Youtube and other similar video websites.
