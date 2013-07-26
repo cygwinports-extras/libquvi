@@ -1,9 +1,0 @@
-DESCRIPTION="Flash Video download link parser"
-HOMEPAGE="http://quvi.sourceforge.net/"
-SRC_URI="mirror://sourceforge/quvi/${P}.tar.xz"
-
-PKG_NAMES="libquvi7 libquvi-devel"
-libquvi7_CONTENTS="usr/bin/cygquvi-7.dll"
-libquvi_devel_CONTENTS="usr/include/ usr/lib/ usr/share/"
-
-MAKEOPTS+=" LDFLAGS=-no-undefined"

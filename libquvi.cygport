@@ -1,0 +1,17 @@
+NAME="libquvi"
+VERSION=0.4.1
+RELEASE=1
+CATEGORY="Video"
+SUMMARY="Flash Video download link parser library"
+DESCRIPTION="libquvi is a library for parsing flash video download links.
+It is written in C and intended to be a cross-platform library. libquvi
+uses Lua for embeddable scripting."
+HOMEPAGE="http://quvi.sourceforge.net/"
+SRC_URI="mirror://sourceforge/quvi/${NAME}-${VERSION}.tar.xz"
+
+PKG_NAMES="libquvi7 libquvi-devel"
+libquvi7_REQUIRES="libquvi-scripts"
+libquvi7_CONTENTS="usr/bin/cygquvi-7.dll"
+libquvi_devel_CONTENTS="usr/include/ usr/lib/ usr/share/"
+
+MAKEOPTS+=" LDFLAGS=-no-undefined"
